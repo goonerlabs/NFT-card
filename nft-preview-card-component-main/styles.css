@@ -42,7 +42,8 @@ body {
   color: var(--clr-font-primary-Soft-blue);
   line-height: 1.5;
   font-size: 18px;
-  /* text-shadow: 0 0 2px; */
+  height: 100vh;
+  overflow: hidden;
 }
 a {
   text-decoration: none;
@@ -55,9 +56,9 @@ card
 */
 
 .card {
-  width: 375px;
-  height: 100vh;
-  margin: 50px auto;
+  width: 374px;
+  height: 90vh;
+  margin: 5vh auto;
   border-radius: var(--radius);
   background: var(--clr-Very-dark-blue-card-BG);
   overflow: hidden;
@@ -70,12 +71,15 @@ banner
 ===============
 */
 .banner {
-  margin: 30px 30px;
+  margin: 0px 32px;
   /* padding: 10px; */
   position: relative;
   display: block;
   overflow: hidden;
   border-radius: 20px;
+  margin-top: 30px;
+  margin-bottom: 8px;
+  height: 50vh;
 }
 .banner-img {
   margin: 0px auto;
@@ -85,6 +89,9 @@ banner
   object-fit: cover;
   border-radius: 20px;
   cursor: pointer;
+  /* margin-top: 30px; */
+  /* margin-bottom: 15px; */
+  height: 100%;
 }
 .background-hover {
   background: rgba(0, 255, 247, 0.5);
@@ -105,7 +112,6 @@ banner
 }
 .banner:hover .view-icon {
   visibility: visible;
-  /* z-index: 1; */
 }
 .banner:hover .background-hover {
   visibility: visible;
@@ -116,13 +122,14 @@ info
 ===============
 */
 .info-section {
-  margin: 5px auto;
+  margin: 0 auto;
   padding: 0 32px;
 }
 .nft-title {
   color: var(--clr-White);
   font-size: 20px;
-  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
   font-weight: 400;
   cursor: pointer;
 }
@@ -132,11 +139,11 @@ info
 .eth-price,
 .countdown-info,
 .nft-info {
-  font-size: 16px;
+  font-size: 18px;
   /* font-weight: 300; */
 }
 .nft-info {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .eth-icon {
   display: inline-block;
@@ -147,7 +154,7 @@ info
   margin-right: 5px;
 }
 .price-countdown {
-  margin: 10px auto;
+  margin: 5px auto;
   padding: 0 32px;
   display: flex;
   justify-content: space-between;
@@ -163,11 +170,11 @@ info
 .content-divider {
   height: 2px;
   background: var(--clr-Very-dark-blue-line);
-  margin: 20px 30px;
+  margin: 10px 30px;
 }
 .creator-section {
   display: flex;
-  margin: 20px 30px;
+  margin: 5px 30px;
   font-size: 16px;
 }
 .creator-section img {
@@ -184,9 +191,15 @@ info
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.creator-info {
+.creator-section {
+  position: relative;
+}
+.creators-info {
   display: inline-block;
-  /* font-weight: 300; */
+  font-size: 18px;
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
 }
 .creator-name {
   color: var(--clr-White);
